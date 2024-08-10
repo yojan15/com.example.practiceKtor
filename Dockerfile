@@ -4,8 +4,8 @@ FROM openjdk:17-jdk
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the jar file into the container
-COPY build/libs/your-app-name.jar /app/practiceKtor.jar
+# Copy the JAR file into the container
+COPY build/libs/com.example.practiceKtor-0.0.1.jar /app/app.jar
 
 # Run the application
-CMD ["java", "-jar", "practiceKtor.jar"]
+CMD ["java", "-jar", "app.jar"]
